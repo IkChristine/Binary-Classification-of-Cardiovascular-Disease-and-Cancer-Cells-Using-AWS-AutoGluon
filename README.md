@@ -1,2 +1,68 @@
 # Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon
 Auto ML Classification
+
+
+This project aims to train several machine learning classifiers to detect and classify cardiovascular disease and cancer on autopilot using the AutoGluon Machine Learning library.
+AutoGluon is the library behind Amazon Web Services (AWS) autopilot and it allows for quick prototyping of AI/ML models using a few lines of code.
+
+
+### Practical application of this project - Can be used by physicians or other alied healthcare professionals to detect cardiovascular disease and understand the factors that contribute to the disease.
+
+Data Variables:
+1. Inputs:
+* Age, Height, Weight, Gender
+* Smoking, Alcohol intake, Physical activity
+* Systolic blood pressure, Diastolic blood pressure
+* Cholesterol, Glucose
+
+2. Output:
+* Cardiovascular disease (1 or 0) #binary classification output
+
+*Data Source*
+- https://www.kaggle.com/sulianova/cardiovascular-disease-dataset
+
+
+Correlation matrix relates all the features.
+- There is a strong positive correlation of 0.45 between glucose and cholesterol levels.
+- There is also a strong positive correlation of 0.50 between gender and height.
+
+  ![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/e66d7948-9d30-466a-80cf-77030a104c49)
+
+
+  AutoGluon is modularixed into sub-modules which may be one of the following options:
+1. autogluon.tabular - tabular data (TabularPredictor) 
+2. autogluon.vision - computer vision (ImagePredictor, ObjectDetector)
+3. autogluon.text - natural language processing (TextPredictor)
+
+   AutoGluon Presets understanding
+- Best quality: Best predictive accuracy with little consideration to inference time or disk usage.
+- High quality fast inference only: High predictive accuracy with fast inference and lower disk usage than best quality. 
+- Medium quality faster train: (Default Preset) Medium predictive accuracy with fast inference and very fast training time.
+- Optimize for deployment: optimizes results for deployment by deleting unused models and removing training artifacts. Can reduce disk usage without impacting model accuracy or inference speed.
+
+
+# Train multiple ML regression models using AutoGluon
+# Specify the target column 'cardio', train_data, limit_time, and presets 
+# AutoGluon automatically detects if the problem is classification or regression type problems from the 'label' column
+
+predictor = TabularPredictor(label = "cardio", problem_type = 'binary', eval_metric = 'accuracy').fit(train_data = X_train, time_limit = 200, presets = "medium_quality_faster_train")
+
+
+![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/52e15814-d0a5-4e28-96fb-63679da58415)
+
+- Best performing model is the WeightedEnsemble_L2 with about 74% accuracy
+- least performing model is the  KNeighborsDist with about 67% accuracy
+- 
+
+![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/fddc17ec-68ca-46e1-8190-e5439fde8529)
+
+
+If model prediction (y_pred) matches ground truth data (y_test) then the model performed well.
+
+- The model correctly classified 5544 as not having cardio vasular disease (True Negative)
+- The model correctly classified 4769 as having cardiovascular disease (True Positive)
+
+- The model misclassified 1525 and not having cardiovascular disease but they actually had the disease (False Negative)
+- The model misclassified 2162 has having cardiovascular disease but they did not have the disease in reality (False Positive)
+
+
