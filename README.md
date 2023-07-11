@@ -41,19 +41,19 @@ Correlation matrix relates all the features.
 - Optimize for deployment: optimizes results for deployment by deleting unused models and removing training artifacts. Can reduce disk usage without impacting model accuracy or inference speed.
 
 
-# Train multiple ML regression models using AutoGluon
-# Specify the target column 'cardio', train_data, limit_time, and presets 
-# AutoGluon automatically detects if the problem is classification or regression type problems from the 'label' column
+#### Train multiple ML regression models using AutoGluon
+- Specify the target column 'cardio', train_data, limit_time, and presets 
+- AutoGluon automatically detects if the problem is classification or regression type problems from the 'label' column
 
 predictor = TabularPredictor(label = "cardio", problem_type = 'binary', eval_metric = 'accuracy').fit(train_data = X_train, time_limit = 200, presets = "medium_quality_faster_train")
 
 
 ![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/52e15814-d0a5-4e28-96fb-63679da58415)
 
-- Best performing model is the WeightedEnsemble_L2 with about 74% accuracy
+- Best performing model is the **WeightedEnsemble_L2 with about 74% accuracy**
 - least performing model is the  KNeighborsDist with about 67% accuracy
-- 
 
+  
 ![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/fddc17ec-68ca-46e1-8190-e5439fde8529)
 
 
