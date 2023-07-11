@@ -66,3 +66,14 @@ If model prediction (y_pred) matches ground truth data (y_test) then the model p
 - The model misclassified 2162 has having cardiovascular disease but they did not have the disease in reality (False Positive)
 
 
+### Cancer dataset -  Using ‘best_quality’ preset and accuracy metric
+
+predictor = TabularPredictor(label = "target", problem_type = 'binary', eval_metric = 'accuracy').fit(train_data = X_train, time_limit = 200, presets = "best_quality")
+
+
+<img width="775" alt="image" src="https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/3a9578e5-7a23-4201-ad0c-4f176c7a34d2">
+
+
+- The best performing model was WeightedEnsemble_L2 with a validity score of 98%
+- The worst performing model was KNeighborsDist_BAG_L1 with a validity score of 92%
+- Model performed extremely well with accuracy score of 97%.
