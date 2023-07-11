@@ -29,12 +29,13 @@ Correlation matrix relates all the features.
   ![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/e66d7948-9d30-466a-80cf-77030a104c49)
 
 
-  AutoGluon is modularixed into sub-modules which may be one of the following options:
-1. autogluon.tabular - tabular data (TabularPredictor) 
+
+### AutoGluon is modularixed into sub-modules which may be one of the following options:
+1. autogluon.tabular - tabular data (TabularPredictor) _ used in this analysis
 2. autogluon.vision - computer vision (ImagePredictor, ObjectDetector)
 3. autogluon.text - natural language processing (TextPredictor)
 
-   AutoGluon Presets understanding
+### AutoGluon Presets understanding
 - Best quality: Best predictive accuracy with little consideration to inference time or disk usage.
 - High quality fast inference only: High predictive accuracy with fast inference and lower disk usage than best quality. 
 - Medium quality faster train: (Default Preset) Medium predictive accuracy with fast inference and very fast training time.
