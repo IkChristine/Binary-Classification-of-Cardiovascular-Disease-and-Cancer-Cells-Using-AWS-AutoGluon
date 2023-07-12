@@ -1,4 +1,4 @@
-# Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon
+# Binary-Classification-of-Cardiovascular-Disease-and-Cancer-cells-Using-AWS-AutoGluon
 Auto ML Classification
 
 
