@@ -58,7 +58,10 @@ predictor = TabularPredictor(label = "cardio", problem_type = 'binary', eval_met
 <p>&nbsp;</p>
 
 ### Cancer dataset
--  Using ‘best_quality’ preset and accuracy metric
+- Testing the Autogluon alogrithm on a different dataset using ‘best_quality’ preset and accuracy metric
+- The benchmark dataset has features related to various tumors.
+- Based on these features the physician can indicate if the tumor is malignant or cancerous.
+
 
 predictor = TabularPredictor(label = "target", problem_type = 'binary', eval_metric = 'accuracy').fit(train_data = X_train, time_limit = 200, presets = "best_quality")
 
