@@ -55,7 +55,6 @@ predictor = TabularPredictor(label = "cardio", problem_type = 'binary', eval_met
 
 
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
 
 ### Cancer dataset
@@ -71,6 +70,7 @@ predictor = TabularPredictor(label = "target", problem_type = 'binary', eval_met
 - The worst performing model was KNeighborsDist_BAG_L1 with a validity score of 92%
 - Model performed extremely well with accuracy score of 97%.
 
+<p>&nbsp;</p>
 
 References: 
 1. American Heart Association. (2023). Heart Disease and Stroke Statistics—2023 Update: A Report From the American Heart Association. Circulation, 147(10), e305–e339. https://doi.org/10.1161/CIR.0000000000001123 
