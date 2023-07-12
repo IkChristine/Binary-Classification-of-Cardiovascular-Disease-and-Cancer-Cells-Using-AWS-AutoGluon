@@ -2,7 +2,7 @@
 Auto ML Classification
 
 
-This project aims to train several machine learning classifiers to detect and classify cardiovascular disease and cancer on autopilot using the AutoGluon Machine Learning library.
+This project aims to train several machine learning classifiers to detect and classify cardiovascular disease and cancer cells on autopilot using the AutoGluon Machine Learning library.
 AutoGluon is the library behind Amazon Web Services (AWS) autopilot and it allows for quick prototyping of AI/ML models using a few lines of code.
 
 ### Practical application of this project:
