@@ -33,7 +33,7 @@ Data Variables:
 
 <p>&nbsp;</p>
 
-### AutoGluon is modularixed into sub-modules and the one used in this analysis was 
+### AutoGluon is modularixed into sub-modules and the sub-module used in this analysis was
 - autogluon.tabular - tabular data (TabularPredictor)
   
 ### AutoGluon Presets understanding: Presets include:
