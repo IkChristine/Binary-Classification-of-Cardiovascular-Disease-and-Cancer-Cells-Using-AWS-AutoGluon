@@ -20,7 +20,7 @@ Data Variables:
 * Cardiovascular disease (1 or 0) #binary classification output
 
 *Data Source*
-- https://www.kaggle.com/sulianova/cardiovascular-disease-dataset
+1. https://www.kaggle.com/sulianova/cardiovascular-disease-dataset
 
 <p>&nbsp;</p>
 
