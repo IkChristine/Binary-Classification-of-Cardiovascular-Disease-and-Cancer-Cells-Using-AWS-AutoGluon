@@ -44,7 +44,7 @@ Data Variables:
 - Optimize for deployment: optimizes results for deployment by deleting unused models and removing training artifacts. Can reduce disk usage without impacting model accuracy or inference speed.
 
 
-#### Training multiple ML regression models using AutoGluon
+#### Training multiple ML regression models using AutoGluon  - "medium_quality_faster_train" preset
 - Specify the target column 'cardio', train_data, limit_time, and presets 
 - AutoGluon automatically detects if the problem is classification or regression type problems from the 'label' column
 
