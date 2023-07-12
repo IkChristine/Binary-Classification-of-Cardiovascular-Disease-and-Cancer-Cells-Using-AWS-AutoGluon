@@ -25,7 +25,7 @@ Data Variables:
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-Correlation matrix relates all the features.
+**Correlation matrix** to look at the relationship between all the features.
 - There is a strong positive correlation of 0.45 between glucose and cholesterol levels.
 - There is also a strong positive correlation of 0.50 between gender and height.
 
