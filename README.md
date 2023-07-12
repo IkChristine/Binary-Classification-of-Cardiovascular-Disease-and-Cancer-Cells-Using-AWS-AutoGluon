@@ -23,6 +23,7 @@ Data Variables:
 - https://www.kaggle.com/sulianova/cardiovascular-disease-dataset
 
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
 Correlation matrix relates all the features.
 - There is a strong positive correlation of 0.45 between glucose and cholesterol levels.
@@ -54,18 +55,6 @@ predictor = TabularPredictor(label = "cardio", problem_type = 'binary', eval_met
 
 - Best performing model is the **WeightedEnsemble_L2 with about 74% accuracy**
 - least performing model is the  KNeighborsDist with about 67% accuracy
-
-  
-![image](https://github.com/IkChristine/Binary-Classification-of-Cardiovascular-Disease-and-Cancer-Using-AWS-AutoGluon/assets/104997783/fddc17ec-68ca-46e1-8190-e5439fde8529)
-
-
-If model prediction (y_pred) matches ground truth data (y_test) then the model performed well.
-
-- The model correctly classified 5544 as not having cardio vasular disease (True Negative)
-- The model correctly classified 4769 as having cardiovascular disease (True Positive)
-
-- The model misclassified 1525 and not having cardiovascular disease but they actually had the disease (False Negative)
-- The model misclassified 2162 has having cardiovascular disease but they did not have the disease in reality (False Positive)
 
 
 <p>&nbsp;</p>
