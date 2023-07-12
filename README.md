@@ -5,8 +5,9 @@ Auto ML Classification
 This project aims to train several machine learning classifiers to detect and classify cardiovascular disease and cancer on autopilot using the AutoGluon Machine Learning library.
 AutoGluon is the library behind Amazon Web Services (AWS) autopilot and it allows for quick prototyping of AI/ML models using a few lines of code.
 
-
-### Practical application of this project - Can be used by physicians or other alied healthcare professionals to detect cardiovascular disease and understand the factors that contribute to the disease.
+### Practical application of this project:
+- Cardiovascular disease (CVD) remains as the leading cause of death in the United States, accounting for 928,741 deaths in the year 2020 (1).
+- Therefore, the steps and results of this project may be useful to physicians or other healthcare professionals to help them realize how ML models can help detect cardiovascular disease, and better understand the confounding factors that contribute to the disease.
 
 Data Variables:
 1. Inputs:
@@ -78,3 +79,7 @@ predictor = TabularPredictor(label = "target", problem_type = 'binary', eval_met
 - The best performing model was WeightedEnsemble_L2 with a validity score of 98%
 - The worst performing model was KNeighborsDist_BAG_L1 with a validity score of 92%
 - Model performed extremely well with accuracy score of 97%.
+
+
+References: 
+1. American Heart Association. (2023). Heart Disease and Stroke Statistics—2023 Update: A Report From the American Heart Association. Circulation, 147(10), e305–e339. https://doi.org/10.1161/CIR.0000000000001123 
