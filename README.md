@@ -31,19 +31,17 @@ Correlation matrix relates all the features.
 
 
 
-### AutoGluon is modularixed into sub-modules which may be one of the following options:
-1. autogluon.tabular - tabular data (TabularPredictor) _ used in this analysis
-2. autogluon.vision - computer vision (ImagePredictor, ObjectDetector)
-3. autogluon.text - natural language processing (TextPredictor)
-
-### AutoGluon Presets understanding
+### AutoGluon is modularixed into sub-modules and the one used in this analysis was 
+- autogluon.tabular - tabular data (TabularPredictor)
+  
+### AutoGluon Presets understanding: Presets include:
 - Best quality: Best predictive accuracy with little consideration to inference time or disk usage.
 - High quality fast inference only: High predictive accuracy with fast inference and lower disk usage than best quality. 
 - Medium quality faster train: (Default Preset) Medium predictive accuracy with fast inference and very fast training time.
 - Optimize for deployment: optimizes results for deployment by deleting unused models and removing training artifacts. Can reduce disk usage without impacting model accuracy or inference speed.
 
 
-#### Train multiple ML regression models using AutoGluon
+#### Training multiple ML regression models using AutoGluon
 - Specify the target column 'cardio', train_data, limit_time, and presets 
 - AutoGluon automatically detects if the problem is classification or regression type problems from the 'label' column
 
