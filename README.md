@@ -6,7 +6,7 @@ This project aims to train several machine learning classifiers to detect and cl
 AutoGluon is the library behind Amazon Web Services (AWS) autopilot and it allows for quick prototyping of AI/ML models using a few lines of code.
 
 ### Practical application of this project:
-- Cardiovascular disease (CVD) remains as the leading cause of death in the United States, accounting for 928,741 deaths in the year 2020 (1).
+- Cardiovascular disease (CVD) remains as the leading cause of death in the United States, accounting for 928,741 deaths in the year 2020(1).
 - Therefore, the steps and results of this project may be useful to physicians or other healthcare professionals to help them realize how ML models can help detect cardiovascular disease, and better understand the confounding factors that contribute to the disease.
 
 Data Variables:
