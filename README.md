@@ -45,8 +45,6 @@ Data Variables:
 
 
 #### Training multiple ML regression models using AutoGluon  - "medium_quality_faster_train" preset
-- Specify the target column 'cardio', train_data, limit_time, and presets 
-- AutoGluon automatically detects if the problem is classification or regression type problems from the 'label' column
 
 predictor = TabularPredictor(label = "cardio", problem_type = 'binary', eval_metric = 'accuracy').fit(train_data = X_train, time_limit = 200, presets = "medium_quality_faster_train")
 
