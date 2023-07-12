@@ -23,7 +23,6 @@ Data Variables:
 - https://www.kaggle.com/sulianova/cardiovascular-disease-dataset
 
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 **Correlation matrix to look at the relationship between all the features**
 - There is a strong positive correlation of 0.45 between glucose and cholesterol levels.
